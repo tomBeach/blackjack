@@ -1,0 +1,331 @@
+/*
+ * manifest file to be compiled into application.css
+ * includes all the files listed below.
+ * reference from here using relative path.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /*font-family: 'Slackey', cursive;
+ font-family: 'Special Elite', cursive;
+ font-family: 'Fredericka the Great', cursive;
+ font-family: 'Short Stack', cursive;*/
+
+/* ======= general ======= */
+html, body, .viewport {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+ *, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+    /*font-family: 'Orbitron', sans-serif;*/
+    font-family: 'Michroma', sans-serif;
+    /*font-family: 'Allerta Stencil', sans-serif;*/
+    /*background-color: #EBEBFF;*/
+    /*background: linear-gradient(#EBEBFF, white);*/
+    background: linear-gradient(gray, white);
+}
+.container {
+    position: relative;
+    z-index: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    /*border: 1px solid red;*/
+}
+
+
+/* ======= cells ======= */
+.cell {
+     width: 50px;
+     height: 50px;
+     background-color: rgba(235, 235, 255, 0);
+     border: 1px solid rebeccapurple;
+}
+.testCell {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border: 1px solid red;
+}
+.indexCell {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border: 1px solid red;
+}
+.logo {
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    font-size: 46px;
+}
+.message {
+    margin: 8px;
+    line-height: 12px;
+    color: rebeccapurple;
+}
+#tooltips {
+    position: absolute;
+    padding: 10px;
+    color: rebeccapurple;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #555;
+    z-index: 9;
+}
+
+/* ======= cardstack ======= */
+.card-d {
+    background-color: #FFB2B2;
+}
+.card-1 {
+    background-color: #FFE0C2;
+}
+.card-2 {
+    background-color: #EBC2FF;
+}
+.card-3 {
+    background-color: #E0D1FF;
+}
+.cardText {
+    margin-top: -5px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cardvalue {
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* ======= player ======= */
+.playerScore {
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+.dealerScore {
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    z-index: 9;
+}
+.playerName {
+    padding-right: 10px;
+    padding-top: 2px;
+    vertical-align: middle;
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
+}
+.dealerName {
+    padding-right: 10px;
+    padding-top: 2px;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+}
+.dBorder {
+    /*background: #FFB2B2;*/
+    background: linear-gradient(white, #FFB2B2);
+}
+.pBorder_1 {
+    /*background: #FFE0C2;*/
+    background: linear-gradient(white, #FFE0C2);
+}
+.pBorder_2 {
+    /*background: #EBC2FF;*/
+    background: linear-gradient(white, #EBC2FF);
+}
+.pBorder_3 {
+    /*background: #E0D1FF;*/
+    background: linear-gradient(white, #E0D1FF);
+}
+.bet, .bank {
+    border: 6px solid chartreuse;
+    background-color: lawngreen;
+}
+
+/* ======= buttons ======= */
+.button {
+    box-shadow: 4px 4px 4px #333;
+}
+#orbBtn {
+    background-color: #85E085;
+}
+#enterBtn, #startBtn, #playBtn, #newGameBtn {
+    background-color: darkcyan;
+}
+#playAgainBtn {
+    background-color: darkcyan;
+    z-index: 9;
+}
+.hitHold {
+    background-color: chartreuse;
+}
+
+/* ======= hover/active fx ======= */
+.hitHold:hover {
+    background-color: mediumvioletred;
+}
+.hitHold:active {
+    background-color: orangered;
+}
+.slider:hover {
+    background-color: chartreuse;
+}
+.in:hover {
+    background-color: yellow;
+    background-image: url("images/BetIn_o.png") 0 0 no-repeat;
+}
+.out:hover {
+    background-color: yellow;
+    background-image: url("images/BetOut_o.png") 0 0 no-repeat;
+}
+#orbBtn:hover, #enterBtn:hover, #startBtn:hover, #playBtn:hover, #playAgainBtn:hover {
+    background-color: chartreuse;
+}
+#orbBtn:active, #enterBtn:active, #startBtn:active, #playBtn:active, #playAgainBtn:active {
+    background-color: limegreen ;
+}
+
+/* ======= table ======= */
+#gameTable {
+    position: absolute;
+    height: 216px;
+    width: 320px;
+    background-color: #6EFFB7;
+    border: 4px solid #C9F1C9;
+    z-index: 0;
+}
+.remove {
+    background-color: black
+}
+
+/* ======= betting ======= */
+.ones, .fives, .tens {
+    border: 1px solid rebeccapurple;
+}
+.table {
+    border-radius: 25px;
+    border: 1px solid rebeccapurple;
+}
+.betting {
+    color: chartreuse;
+    background-color: gray;
+}
+.slider {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: darkcyan;
+    box-shadow: 4px 4px 4px #222;
+    z-index: 9;
+}
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px #222;
+    z-index: 9;
+}
+.in {
+    background-color: chartreuse;
+}
+.out {
+    background-color: red;
+}
+
+/* ======= text input ======= */
+.playerName {
+    height: 40px;
+    width: 140px;
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+/* ======= card flip ======= */
+.card {
+    position: relative;
+    float: left;
+    width: 48px;
+	height: 96px;
+    text-align: center;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 4px #555;
+    -moz-box-shadow: 4px 4px 4px #555;
+    -ms-box-shadow: 4px 4px 4px #555;
+    -o-box-shadow: 4px 4px 4px #555;
+    box-shadow: 4px 4px 4px #555;
+}
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.6s;
+}
+.front {
+    background-color: #EBEBFF;
+}
+.back {
+    background-color: #EBEBFF;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.card.flipped .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.card.flipped .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
