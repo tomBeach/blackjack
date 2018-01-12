@@ -3,9 +3,7 @@ For my friends and advisors, the design for this game has been controversial...
 "It's overly complicated..."
 "It's not responsive..."
 
-Halfway through the recoding of this project I was inclined to agree, but the critiques were missing the point of my design choice, and the difficulties I faced during coding had more to do with an early oversight than an inherent design flaw.
-
-Why a grid?  Specifically: to explore a thinking-outside-the-box approach to a familiar game, and to encounter and practice a challenging form of DOM manipulation and management.
+The critiques were valid, but the design was motivated by primarily by curiosity and experimentation.  Why a grid?  Specifically: to explore a thinking-outside-the-box approach to a familiar game, and to encounter and practice a challenging form of DOM manipulation and management.
 
 grid
 
