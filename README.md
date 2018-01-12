@@ -1,6 +1,6 @@
 ## blackjack
 
-For my friends and advisors, the design for this game has been controversial...
+From the beginning, the design for this game was controversial...
 "The design has nothing to do with the game itself..."
 "It's overly complicated..."
 "It's not responsive..."
